@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useState } from "react"
 import axiosClient from "../axiosClient";
+import { Link } from "react-router-dom";
 
 export default function Users() {
 
@@ -24,7 +25,8 @@ export default function Users() {
       }
     return(
         <div>
-            <h1>users registered</h1>
+          <div><h1>users</h1></div>
+            <Link to="/users/new">Add User</Link>
         </div>
     )
 };
